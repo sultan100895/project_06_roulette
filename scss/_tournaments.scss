@@ -1,0 +1,205 @@
+@import 'variables';
+@import 'mixin';
+/*==================================
+  ===== tournaments css starts =====
+====================================*/
+#tournaments{
+  background: $bg1;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  .faq-heading{
+    h1{
+      @include header;
+      position: relative;
+      margin-bottom: 90px !important;
+
+      &::after{
+        content: '';
+        width: 100%;
+        height: 2px;
+        background: #080007;
+        position: absolute;
+        bottom: -35px;
+        left: 0;
+      }
+      &::before{
+        content: '';
+        width: 100%;
+        height: 1px;
+        background: #2f0a5d;
+        position: absolute;
+        bottom: -37px;
+        left: 0;
+      }
+    }
+  }
+
+  .faq{
+    padding: 10px;
+    margin-bottom: 30px;
+
+    .question{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+
+      h3{
+        @include nunitoreg;
+        font-size: 20px;
+        color: #fff;
+      }
+      i{
+        color: #fff;
+        font-size: 20px;
+        transition: all linear .4s;
+      }
+    }
+
+    .answer{
+      max-height: 0;
+      overflow: hidden;
+      transition: all linear .4s;
+      p{
+        @include nunitoreg;
+        font-size: 16px;
+        color: #fff;
+        line-height: 26px;
+        margin-top: 20px;
+        margin-bottom: 0 !important;
+      }
+    }
+  }
+  .faq.active .answer{
+    max-height: 300px;
+    animation: fade 1s ease-in-out;
+  }
+  .faq.active i{
+    rotate: 180deg;
+  }
+  .faq.active{
+    border: 1px solid #fcb100;
+  }
+
+  .tournament-heading{
+    h1{
+      @include header;
+      position: relative;
+      margin-bottom: 65px !important;
+
+      &::after{
+        content: '';
+        width: 100%;
+        height: 2px;
+        background: #080007;
+        position: absolute;
+        bottom: -35px;
+        left: 0;
+      }
+      &::before{
+        content: '';
+        width: 100%;
+        height: 1px;
+        background: #2f0a5d;
+        position: absolute;
+        bottom: -37px;
+        left: 0;
+      }
+    }
+
+  }
+  .tournament-countdown{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h4{
+      @include nunitoreg;
+      font-size: 20px;
+      color: #fff;
+    }
+
+    #countdown-active{
+      display: flex;
+      .countdown-box{
+        border: 1px solid #fcb100;
+        margin-left: 30px;
+        border-radius: 5px;
+        height: 68px;
+        width: 68px;
+        text-align: center;
+      }
+      h2{
+        margin-bottom: 0px !important;
+        @include nunitomed;
+        font-size: 25px;
+        color: #fcb100;
+        padding-top: 5px;
+      }
+      span{
+        @include nunitomed;
+        font-size: 20px;
+        color: #fcb100;
+      }
+    }
+  }
+  .players-list{
+    margin-top: 50px;
+    height: 270px;
+    overflow: scroll; 
+      
+    .players-detail{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 5px;
+      position: relative;
+
+      h6{
+        @include nunitoreg;
+        font-size: 16px;
+        color: #fff;
+
+        &::after{
+          content: '';
+          width: 100%;
+          height: 2px;
+          background: #080007;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+        }
+        &::before{
+          content: '';
+          width: 100%;
+          height: 1px;
+          background: #2f0a5d;
+          position: absolute;
+          bottom: -1px;
+          left: 0;
+        }
+      }
+      p{
+        @include nunitoreg;
+        font-size: 16px;
+        color: #fff;
+        line-height: 50px;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@keyframes fade {
+  from{
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*================================
+  ===== tournaments css ends =====
+==================================*/

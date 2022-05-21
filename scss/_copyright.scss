@@ -1,0 +1,24 @@
+@import 'variables';
+@import 'mixin';
+/*================================
+  ===== copyright css starts =====
+==================================*/
+#copyright{
+  background: $bg2;
+  h4{
+    @include nunitomed;
+    font-size: 16px;
+    color: #fff;
+    line-height: 16px;
+    padding: 20px 0px;
+    text-align: center;
+    text-transform: capitalize;
+    span{
+      color: #fcb100;
+    }
+  }
+}
+
+/*==============================
+  ===== copyright css ends =====
+================================*/

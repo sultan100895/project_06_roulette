@@ -1,0 +1,49 @@
+@import 'variables.scss';
+
+// ===== fonts =====
+@mixin antonreg {
+  font-family: $ff2;
+  font-weight: 400; 
+}
+@mixin antonmed {
+  font-family: $ff2;
+  font-weight: 600; 
+}
+@mixin nunitoreg {
+  font-family: $ff1;
+  font-weight: 400;
+}
+@mixin nunitomed {
+  font-family: $ff1;
+  font-weight: 600;
+}
+@mixin nunitobold {
+  font-family: $ff1;
+  font-weight: 900;
+}
+
+@mixin openreg {
+  font-family: $ff3;
+  font-weight: 200;
+}
+
+// ===== other css =====
+@mixin transition {
+  transition: all linear 0.4s;
+}
+@mixin over85{
+  background: rgba($overlay,0.85);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@mixin header {
+  font-family: $ff2;
+  font-weight: 400;
+  color: #fcb100;
+  font-size: 32px;
+  text-shadow: 0px 0px 50px #5a0274;
+}

@@ -1,0 +1,1351 @@
+/*=============================
+  ===== common css starts =====
+===============================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+/*===========================
+  ===== common css ends =====
+=============================*/
+/* ==========================
+===== navbar css srarts =====
+=============================*/
+#navbar {
+  background: #150035;
+}
+#navbar .navbar .navbar-brand {
+  margin-left: 0;
+}
+#navbar .navbar #navbarNav {
+  margin-top: 50px !important;
+}
+#navbar .navbar button {
+  margin-left: 20px;
+  border: none;
+  border-bottom: 5px solid #661355;
+  border-radius: 10px;
+  padding: 14px 30px;
+  text-shadow: 5px 5px 1px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(#fc37d9, #aa0288);
+  color: #fff;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  position: relative;
+  transition: all linear 0.4s;
+  z-index: 1;
+}
+#navbar .navbar button::after {
+  content: '';
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(#9c4cfa, #590ec9);
+  border-radius: 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all linear 0.4s;
+  z-index: -1;
+}
+#navbar .navbar button:hover {
+  border-bottom: 5px solid #3a0090;
+}
+#navbar .navbar button:hover::after {
+  opacity: 1;
+}
+#navbar .navbar button:first-of-type {
+  margin-left: 0;
+}
+#navbar .navbar .navbar-nav {
+  margin-top: 20px !important;
+}
+#navbar .navbar .navbar-nav .nav-item .active {
+  color: #ff39dc !important;
+}
+#navbar .navbar .navbar-nav .nav-item .nav-link {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #944bff;
+  margin-right: 50px;
+  transition: all linear 0.4s;
+  display: inline !important;
+}
+#navbar .navbar .navbar-nav .nav-item .nav-link:hover {
+  color: #ff39dc;
+}
+
+/* ========================
+===== navbar css ends =====
+===========================*/
+/*=============================
+  ===== banner css starts =====
+===============================*/
+#banner {
+  background: #150035;
+  padding-top: 25px;
+  position: relative;
+}
+#banner .banner-image {
+  position: relative;
+}
+#banner .banner-image img {
+  transform: scale(1.15);
+  position: absolute;
+  top: 45px;
+  left: -60px;
+}
+#banner .register-area {
+  position: absolute;
+  bottom: -96px;
+  left: 0;
+}
+#banner .banner-text h5 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  font-size: 20px;
+  padding-top: 80px !important;
+}
+#banner .banner-text h1 {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-size: 330px;
+  color: #fcb100;
+  text-shadow: 0px 0px 50px #5a0274;
+  margin-top: -45px !important;
+  margin-bottom: -35px !important;
+  margin-left: -10px !important;
+}
+#banner .banner-text p {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  font-size: 15px;
+}
+#banner .banner-text button {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 30px;
+  margin-bottom: 240px;
+  border: none;
+  border-bottom: 5px solid #3a0090;
+  border-radius: 10px;
+  padding: 14px 30px;
+  text-shadow: 5px 5px 1px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(#9c4cfa, #590ec9);
+  color: #fff;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  position: relative;
+  transition: all linear 0.4s;
+  z-index: 1;
+}
+#banner .banner-text button::after {
+  content: '';
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(#fc37d9, #aa0288);
+  border-radius: 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all linear 0.4s;
+  z-index: -1;
+}
+#banner .banner-text button:hover {
+  border-bottom: 5px solid #661355;
+}
+#banner .banner-text button:hover::after {
+  opacity: 1;
+}
+#banner .card-item {
+  background: #661bd3;
+  box-shadow: 20px 0px 30px 0px rgba(0, 0, 0, 0.26) inset;
+  -webkit-box-shadow: 20px 0px 30px 0px rgba(0, 0, 0, 0.26) inset;
+  -moz-box-shadow: 20px 0px 30px 0px rgba(0, 0, 0, 0.26) inset;
+}
+#banner .card-item h1 {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-size: 50px;
+  color: #fcb100;
+  padding-top: 25px;
+  text-shadow: 0px 0px 50px #5a0274;
+}
+#banner .card-item h2 {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  color: #fff;
+  padding-top: 15px;
+  text-shadow: 5px 5px 1px rgba(0, 0, 0, 0.2);
+}
+#banner .card-item p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 200;
+  font-size: 14px;
+  color: #fff;
+  padding-top: 10px;
+  padding-bottom: 25px;
+}
+#banner .item-1 {
+  border-radius: 5px 0 0 5px;
+  box-shadow: none !important;
+}
+#banner .item-3 {
+  border-radius: 0 5px 5px 0;
+}
+
+/*===========================
+  ===== banner css ends =====
+=============================*/
+/*============================
+  ===== games css starts =====
+==============================*/
+#games {
+  background: #0b001b;
+  padding-bottom: 100px;
+}
+#games .heading h1 {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  color: #fcb100;
+  font-size: 32px;
+  text-shadow: 0px 0px 50px #5a0274;
+  padding-top: 180px;
+  padding-bottom: 60px;
+}
+#games .item-image {
+  position: relative;
+  overflow: hidden;
+}
+#games .item-image:hover .overlay {
+  left: 0;
+}
+#games .item-image .overlay {
+  transition: all linear 0.4s;
+  background: rgba(21, 0, 53, 0.85);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  position: absolute;
+  top: 0;
+  left: -100%;
+}
+#games .item-image .overlay h3 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 200;
+  font-size: 24px;
+  color: #fff;
+  padding-top: 165px;
+  padding-bottom: 40px;
+}
+#games .item-image .overlay button {
+  border: none;
+  border-bottom: 5px solid #3a0090;
+  border-radius: 10px;
+  padding: 14px 30px;
+  text-shadow: 5px 5px 1px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(#9c4cfa, #590ec9);
+  color: #fff;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  position: relative;
+  transition: all linear 0.4s;
+  z-index: 1;
+}
+#games .item-image .overlay button::after {
+  content: '';
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(#fc37d9, #aa0288);
+  border-radius: 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all linear 0.4s;
+  z-index: -1;
+}
+#games .item-image .overlay button:hover {
+  border-bottom: 5px solid #661355;
+}
+#games .item-image .overlay button:hover::after {
+  opacity: 1;
+}
+
+/*===========================
+  ===== banner css ends =====
+=============================*/
+/*===========================
+  ===== spin css starts =====
+=============================*/
+#spin {
+  background: #150035;
+  padding-top: 100px;
+}
+#spin .item-image {
+  position: relative;
+  background: red !important;
+}
+#spin .item-image img {
+  position: absolute;
+  top: 0;
+  left: -45px;
+}
+#spin .item-text h1 {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  color: #fcb100;
+  font-size: 32px;
+  text-shadow: 0px 0px 50px #5a0274;
+  padding-top: 80px;
+  padding-bottom: 55px;
+}
+#spin .item-text p {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #fff;
+}
+#spin .item-text button {
+  margin-top: 35px;
+  margin-bottom: 180px;
+  border: none;
+  border-bottom: 5px solid #3a0090;
+  border-radius: 10px;
+  padding: 14px 30px;
+  text-shadow: 5px 5px 1px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(#9c4cfa, #590ec9);
+  color: #fff;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  position: relative;
+  transition: all linear 0.4s;
+  z-index: 1;
+}
+#spin .item-text button::after {
+  content: '';
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(#fc37d9, #aa0288);
+  border-radius: 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all linear 0.4s;
+  z-index: -1;
+}
+#spin .item-text button:hover {
+  border-bottom: 5px solid #661355;
+}
+#spin .item-text button:hover::after {
+  opacity: 1;
+}
+
+/*=========================
+  ===== spin css ends =====
+===========================*/
+/*==============================
+  ===== pricing css starts =====
+================================*/
+#pricing {
+  background: #0b001b;
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+#pricing .heading h1 {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  color: #fcb100;
+  font-size: 32px;
+  text-shadow: 0px 0px 50px #5a0274;
+  padding-bottom: 80px;
+}
+#pricing .pricing-item {
+  position: relative;
+  transition: all linear 0.4s;
+}
+#pricing .pricing-item .pricing-heading {
+  background: linear-gradient(#fc37d9, #aa0288);
+  width: 100%;
+  border-bottom: 6px solid #661355;
+  border-radius: 5px 5px 0 0;
+  position: absolute;
+  top: -27px;
+  left: 0;
+  opacity: 0;
+  transition: all linear 0.4s;
+}
+#pricing .pricing-item .pricing-heading h4 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #fff;
+  line-height: 54px;
+  text-align: center;
+  text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.4);
+}
+#pricing .pricing-item:hover {
+  transform: scaleY(1.05);
+}
+#pricing .pricing-item:hover .pricing-heading {
+  opacity: 1;
+}
+#pricing .pricing-item:hover button {
+  opacity: 1;
+}
+#pricing .pricing-detail {
+  background: linear-gradient(#9d4efb, #580dc8);
+}
+#pricing .pricing-detail h1 {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  color: #fff;
+  text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.4);
+  padding-top: 60px;
+  padding-bottom: 10px;
+}
+#pricing .pricing-detail h2 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 900;
+  font-size: 50px;
+  color: #fff;
+  margin-bottom: -7px !important;
+}
+#pricing .pricing-detail p {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+  position: relative;
+  margin-bottom: 25px !important;
+}
+#pricing .pricing-detail p::after {
+  content: '';
+  height: 1px;
+  width: 100%;
+  background: #6427b5;
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+}
+#pricing .pricing-detail ul li {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
+  padding-top: 25px;
+  cursor: pointer;
+}
+#pricing .pricing-detail ul li:last-child {
+  margin-bottom: -30px !important;
+}
+#pricing .pricing-detail button {
+  opacity: 0;
+  position: absolute;
+  bottom: -35px;
+  border: none;
+  border-bottom: 5px solid #3a0090;
+  border-radius: 10px;
+  padding: 14px 30px;
+  text-shadow: 5px 5px 1px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(#9c4cfa, #590ec9);
+  color: #fff;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  position: relative;
+  transition: all linear 0.4s;
+  z-index: 1;
+}
+#pricing .pricing-detail button::after {
+  content: '';
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(#fc37d9, #aa0288);
+  border-radius: 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all linear 0.4s;
+  z-index: -1;
+}
+#pricing .pricing-detail button:hover {
+  border-bottom: 5px solid #661355;
+}
+#pricing .pricing-detail button:hover::after {
+  opacity: 1;
+}
+
+/*============================
+  ===== pricing css ends =====
+==============================*/
+/*==================================
+  ===== tournaments css starts =====
+====================================*/
+#tournaments {
+  background: #150035;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+#tournaments .faq-heading h1 {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  color: #fcb100;
+  font-size: 32px;
+  text-shadow: 0px 0px 50px #5a0274;
+  position: relative;
+  margin-bottom: 90px !important;
+}
+#tournaments .faq-heading h1::after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #080007;
+  position: absolute;
+  bottom: -35px;
+  left: 0;
+}
+#tournaments .faq-heading h1::before {
+  content: '';
+  width: 100%;
+  height: 1px;
+  background: #2f0a5d;
+  position: absolute;
+  bottom: -37px;
+  left: 0;
+}
+#tournaments .faq {
+  padding: 10px;
+  margin-bottom: 30px;
+}
+#tournaments .faq .question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+#tournaments .faq .question h3 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+}
+#tournaments .faq .question i {
+  color: #fff;
+  font-size: 20px;
+  transition: all linear .4s;
+}
+#tournaments .faq .answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: all linear .4s;
+}
+#tournaments .faq .answer p {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+  line-height: 26px;
+  margin-top: 20px;
+  margin-bottom: 0 !important;
+}
+#tournaments .faq.active .answer {
+  max-height: 300px;
+  animation: fade 1s ease-in-out;
+}
+#tournaments .faq.active i {
+  rotate: 180deg;
+}
+#tournaments .faq.active {
+  border: 1px solid #fcb100;
+}
+#tournaments .tournament-heading h1 {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  color: #fcb100;
+  font-size: 32px;
+  text-shadow: 0px 0px 50px #5a0274;
+  position: relative;
+  margin-bottom: 65px !important;
+}
+#tournaments .tournament-heading h1::after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #080007;
+  position: absolute;
+  bottom: -35px;
+  left: 0;
+}
+#tournaments .tournament-heading h1::before {
+  content: '';
+  width: 100%;
+  height: 1px;
+  background: #2f0a5d;
+  position: absolute;
+  bottom: -37px;
+  left: 0;
+}
+#tournaments .tournament-countdown {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#tournaments .tournament-countdown h4 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+}
+#tournaments .tournament-countdown #countdown-active {
+  display: flex;
+}
+#tournaments .tournament-countdown #countdown-active .countdown-box {
+  border: 1px solid #fcb100;
+  margin-left: 30px;
+  border-radius: 5px;
+  height: 68px;
+  width: 68px;
+  text-align: center;
+}
+#tournaments .tournament-countdown #countdown-active h2 {
+  margin-bottom: 0px !important;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  color: #fcb100;
+  padding-top: 5px;
+}
+#tournaments .tournament-countdown #countdown-active span {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #fcb100;
+}
+#tournaments .players-list {
+  margin-top: 50px;
+  height: 270px;
+  overflow: scroll;
+}
+#tournaments .players-list .players-detail {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  position: relative;
+}
+#tournaments .players-list .players-detail h6 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+}
+#tournaments .players-list .players-detail h6::after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #080007;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+#tournaments .players-list .players-detail h6::before {
+  content: '';
+  width: 100%;
+  height: 1px;
+  background: #2f0a5d;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+}
+#tournaments .players-list .players-detail p {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+  line-height: 50px;
+  margin-bottom: 0;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/*================================
+  ===== tournaments css ends =====
+==================================*/
+/*==============================
+  ===== payment css starts =====
+================================*/
+#payment {
+  background: linear-gradient(#9c4cfa, #590ec9);
+  border-bottom: 5px solid #3a0090;
+}
+#payment .offers-area h1 {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  color: #fff;
+  text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.4);
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+#payment .offers-area form {
+  margin-bottom: 30px;
+  border: 1px solid #150035;
+  width: 520px;
+}
+#payment .offers-area form i {
+  color: #3a0090;
+  font-size: 16px;
+}
+#payment .offers-area form input {
+  background: transparent;
+  border: none;
+  border-right: 1px solid #150035;
+  color: #3a0090;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+#payment .offers-area form input::placeholder {
+  color: #3a0090;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+#payment .offers-area form input:focus {
+  box-shadow: none;
+}
+#payment .payment-area h1 {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  color: #fff;
+  text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.4);
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+#payment .payment-area .payment-option a img {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+/*============================
+  ===== payment css ends =====
+==============================*/
+/*=============================
+  ===== footer css starts =====
+===============================*/
+#footer {
+  background: #0b001b;
+  border-bottom: 1px solid #590ec9;
+}
+#footer h1 {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  color: #fff;
+  text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.4);
+  margin-top: 60px;
+  padding-bottom: 15px;
+}
+#footer .jackpot-area p {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #fff;
+  line-height: 26px;
+  margin-bottom: 35px;
+}
+#footer .jackpot-area i {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  margin-right: 10px;
+  background: linear-gradient(#9c4cfa, #590ec9);
+  border-bottom: 3px solid #3a0090;
+  text-align: center;
+  color: #fff;
+  text-shadow: 3px 4px 1px rgba(0, 0, 0, 0.4);
+  font-size: 20px;
+  position: relative;
+  z-index: 1;
+  transition: all linear 0.4s;
+}
+#footer .jackpot-area i::after {
+  content: '';
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(#fc37d9, #aa0288);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all linear 0.4s;
+  z-index: -1;
+}
+#footer .jackpot-area i:hover {
+  border-bottom: 3px solid #661355;
+}
+#footer .jackpot-area i:hover::after {
+  opacity: 1;
+}
+#footer .link-area .links table {
+  width: 88%;
+}
+#footer .link-area .links table a {
+  font-family: "Nunito", sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+  color: #fff;
+  line-height: 40px;
+  text-transform: capitalize;
+}
+#footer .security-area h1 {
+  margin-bottom: 5px !important;
+}
+#footer .security-area .logo {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-bottom: 25px;
+}
+#footer .security-area .logo img {
+  cursor: pointer;
+}
+#footer .security-area .logo p {
+  font-family: "Nunito", sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+  color: #fff;
+  padding-right: 120px;
+  margin-left: 28px;
+  margin-bottom: 0;
+}
+
+/*===========================
+  ===== footer css ends =====
+=============================*/
+/*================================
+  ===== copyright css starts =====
+==================================*/
+#copyright {
+  background: #0b001b;
+}
+#copyright h4 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
+  line-height: 16px;
+  padding: 20px 0px;
+  text-align: center;
+  text-transform: capitalize;
+}
+#copyright h4 span {
+  color: #fcb100;
+}
+
+/*==============================
+  ===== copyright css ends =====
+================================*/
+/*=================================
+  ===== responsive css starts =====
+===================================*/
+/* ===== For Extra Small Device =====  */
+@media (min-width: 320px) and (max-width: 575px) {
+  /* ===== navbar css starts ===== */
+  #navbar .navbar {
+    background: #150035;
+    padding: 0px 10px !important;
+  }
+  #navbar .navbar #navbarNav {
+    margin-top: -15px !important;
+  }
+  #navbar .navbar #navbarNav button {
+    width: 47%;
+  }
+  #navbar .navbar ul li {
+    background: #3234394d !important;
+  }
+  #navbar .navbar .navbar-brand {
+    position: static;
+  }
+  #navbar .navbar .navbar-toggler {
+    margin-left: 200px !important;
+    padding: 10px 15px !important;
+    margin-top: 75px;
+    border-radius: 5px;
+    border-bottom: none;
+  }
+  #navbar .navbar .navbar-toggler::after {
+    border-radius: 5px;
+  }
+  #navbar .navbar .navbar-toggler:hover {
+    border-bottom: none;
+  }
+  #navbar .navbar .navbar-toggler:focus {
+    box-shadow: none;
+  }
+  #navbar .navbar i {
+    text-shadow: none;
+    color: #fff !important;
+    font-size: 20px;
+  }
+  #navbar .navbar-nav .nav-item {
+    text-align: center;
+    padding: 5px 0 !important;
+  }
+  #navbar .navbar-nav .nav-item .nav-link {
+    margin-right: 0 !important;
+  }
+
+  /* ===== navbar css ends ===== */
+  /* ///////////////////////////// */
+  /* ===== banner css starts ===== */
+  #banner {
+    position: static;
+  }
+
+  /* ===== banner css ends ===== */
+  /* //////////////////////////// */
+  /* ===== about css starts ===== */
+  /* ===== about css ends ===== */
+  /* ///////////////////////////////// */
+  /* ===== gallery css starts ===== */
+  /* ===== gallery css ends ===== */
+  /* ////////////////////////////// */
+  /* ===== team css starts ===== */
+  /* ===== team css ends ===== */
+  /* ///////////////////////////// */
+  /* ===== testimonial css ends ===== */
+  /* ===== testimonial css ends ===== */
+  /* /////////////////////////////////// */
+  /* ===== membership css starts ===== */
+  /* ===== membership css ends ===== */
+  /* //////////////////////////////// */
+  /* ===== counter css starts ===== */
+  /* ===== counter css ends ===== */
+  /* ////////////////////////////// */
+  /* ===== routine css starts ===== */
+  /* ===== routine css ends ===== */
+  /* ////////////////////////////// */
+  /* ===== brand css starts ===== */
+  /* ===== brand css ends ===== */
+  /* //////////////////////////// */
+  /* ===== footer css starts ===== */
+  /* ===== footer css ends ===== */
+}
+/* ================================================================================= */
+/* ================================================================================= */
+/* ===== For Small Device =====  */
+@media (min-width: 576px) and (max-width: 767px) {
+  /* ===== navbar css starts ===== */
+  #navbar .navbar {
+    background: #150035;
+    padding: 0px 10px !important;
+  }
+  #navbar .navbar #navbarNav {
+    margin-top: -15px !important;
+  }
+  #navbar .navbar #navbarNav button {
+    width: 47%;
+  }
+  #navbar .navbar ul li {
+    background: #3234394d !important;
+  }
+  #navbar .navbar .navbar-brand {
+    position: static !important;
+    margin-left: 0px !important;
+  }
+  #navbar .navbar .navbar-toggler {
+    padding: 10px 15px !important;
+    margin-top: 75px;
+    border-radius: 5px;
+    border-bottom: none;
+    z-index: 1;
+  }
+  #navbar .navbar .navbar-toggler::after {
+    border-radius: 5px;
+    z-index: -1;
+  }
+  #navbar .navbar .navbar-toggler:hover {
+    border-bottom: none;
+  }
+  #navbar .navbar .navbar-toggler:focus {
+    box-shadow: none;
+  }
+  #navbar .navbar i {
+    text-shadow: none;
+    color: #fff !important;
+    font-size: 20px;
+  }
+  #navbar .navbar-nav .nav-item {
+    text-align: center;
+    padding: 5px 0 !important;
+  }
+  #navbar .navbar-nav .nav-item .nav-link {
+    margin-right: 0 !important;
+  }
+
+  /* ===== navbar css ends ===== */
+  /* ///////////////////////////// */
+  /* ===== banner css starts ===== */
+  #banner .banner-image {
+    position: static;
+  }
+  #banner .banner-image img {
+    position: static;
+    margin-top: 80px;
+  }
+  #banner .banner-text {
+    margin-left: 50px;
+  }
+  #banner .banner-text h5 {
+    padding-top: 0px !important;
+  }
+  #banner .banner-text h1 {
+    font-size: 135px;
+    margin-top: -10px !important;
+    margin-bottom: -15px !important;
+  }
+  #banner .banner-text p {
+    text-align: justify !important;
+  }
+  #banner .banner-text button {
+    margin-left: 0 !important;
+    margin-top: 10px !important;
+    transform: translateX(0%);
+    margin-bottom: 100px !important;
+  }
+  #banner .register-area {
+    bottom: -72px;
+  }
+  #banner .card-item h1 {
+    font-size: 25px;
+    padding-top: 10px;
+  }
+  #banner .card-item h2 {
+    font-size: 16px;
+    padding-top: 10px;
+  }
+  #banner .card-item P {
+    font-size: 14px;
+    padding: 5px 20px;
+  }
+
+  /* ===== banner css ends ===== */
+  /* //////////////////////////// */
+  /* ===== related-games css starts ===== */
+  #games .heading h1 {
+    padding-top: 100px !important;
+  }
+  #games .item-image .overlay h3 {
+    font-size: 16px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+  }
+  #games .item-image .overlay button {
+    transform: scale(0.5);
+  }
+
+  /* ===== related-games css ends ===== */
+  /* ///////////////////////////////// */
+  /* ===== spin css starts ===== */
+  #spin {
+    padding-top: 0px;
+  }
+  #spin .item-image img {
+    margin-top: 80px;
+    left: 0px;
+  }
+  #spin .item-text h1 {
+    padding-top: 20px;
+    padding-bottom: 650px;
+    text-align: center;
+  }
+  #spin .item-text p {
+    text-align: justify;
+  }
+  #spin .item-text button {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  /* ===== spin css ends ===== */
+  /* ////////////////////////////// */
+  /* ===== pricing css starts ===== */
+  #pricing {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  #pricing .heading h1 {
+    padding-bottom: 0px;
+  }
+  #pricing .pricing-detail button {
+    opacity: 1 !important;
+  }
+  #pricing .pricing-item {
+    margin-top: -40px;
+    transform: scale(0.7);
+  }
+  #pricing .pricing-item:hover {
+    transform: scale(0.75);
+  }
+  #pricing .pricing-item .pricing-heading {
+    opacity: 1 !important;
+  }
+
+  /* ===== pricing css ends ===== */
+  /* ===== payment css ends ===== */
+  #payment {
+    padding-bottom: 30px;
+  }
+
+  /* ===== payment css ends ===== */
+}
+/* ================================================================================= */
+/* ================================================================================= */
+/* ===== For Medium Device =====  */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* ===== navbar css starts ===== */
+  #navbar .navbar {
+    background: #150035;
+    padding: 0px 10px !important;
+  }
+  #navbar .navbar #navbarNav {
+    margin-top: -15px !important;
+  }
+  #navbar .navbar #navbarNav button {
+    width: 47%;
+  }
+  #navbar .navbar ul li {
+    background: #3234394d !important;
+  }
+  #navbar .navbar .navbar-brand {
+    position: static !important;
+    margin-left: 0px !important;
+  }
+  #navbar .navbar .navbar-toggler {
+    padding: 10px 15px !important;
+    margin-top: 75px;
+    border-radius: 5px;
+    border-bottom: none;
+    z-index: 1;
+  }
+  #navbar .navbar .navbar-toggler::after {
+    border-radius: 5px;
+    z-index: -1;
+  }
+  #navbar .navbar .navbar-toggler:hover {
+    border-bottom: none;
+  }
+  #navbar .navbar .navbar-toggler:focus {
+    box-shadow: none;
+  }
+  #navbar .navbar i {
+    text-shadow: none;
+    color: #fff !important;
+    font-size: 20px;
+  }
+  #navbar .navbar-nav .nav-item {
+    text-align: center;
+    padding: 5px 0 !important;
+  }
+  #navbar .navbar-nav .nav-item .nav-link {
+    margin-right: 0 !important;
+  }
+
+  /* ===== navbar css ends ===== */
+  /* ///////////////////////////// */
+  /* ===== banner css starts ===== */
+  #banner .banner-image {
+    position: static;
+  }
+  #banner .banner-image img {
+    position: static;
+    margin-top: 20px;
+  }
+  #banner .banner-text {
+    margin-left: 50px;
+  }
+  #banner .banner-text h5 {
+    padding-top: 0px !important;
+  }
+  #banner .banner-text h1 {
+    font-size: 135px;
+    margin-top: -10px !important;
+    margin-bottom: -15px !important;
+  }
+  #banner .banner-text p {
+    text-align: justify !important;
+  }
+  #banner .banner-text button {
+    margin-left: 0 !important;
+    margin-top: 10px !important;
+    transform: translateX(0%);
+    margin-bottom: 100px !important;
+  }
+  #banner .register-area {
+    bottom: -72px;
+  }
+  #banner .card-item h1 {
+    font-size: 25px;
+    padding-top: 10px;
+  }
+  #banner .card-item h2 {
+    font-size: 16px;
+    padding-top: 10px;
+  }
+  #banner .card-item P {
+    font-size: 14px;
+    padding: 5px 20px;
+  }
+
+  /* ===== banner css ends ===== */
+  /* //////////////////////////// */
+  /* ===== related-games css starts ===== */
+  #games .heading h1 {
+    padding-top: 100px !important;
+  }
+  #games .item-image .overlay h3 {
+    font-size: 20px;
+    padding-top: 80px;
+    padding-bottom: 10px;
+  }
+  #games .item-image .overlay button {
+    transform: scale(0.8);
+  }
+
+  /* ===== related-games css ends ===== */
+  /* ///////////////////////////////// */
+  /* ===== spin css starts ===== */
+  #spin {
+    padding-top: 0px;
+  }
+  #spin .item-image img {
+    margin-top: 80px;
+    left: 0px;
+  }
+  #spin .item-text h1 {
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+  #spin .item-text p {
+    text-align: justify;
+  }
+  #spin .item-text button {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  /* ===== spin css ends ===== */
+  /* ////////////////////////////// */
+  /* ===== pricing css starts ===== */
+  #pricing {
+    padding-top: 30px;
+    padding-bottom: 80px;
+  }
+  #pricing .heading h1 {
+    padding-bottom: 0px;
+  }
+  #pricing .pricing-item {
+    margin-top: 60px;
+  }
+  #pricing .pricing-detail ul li {
+    margin-bottom: -10px !important;
+  }
+
+  /* ===== pricing css ends ===== */
+  /* ===== tournaments css starts ===== */
+  #tournaments {
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+  #tournaments .faq .question h3 {
+    font-size: 16px;
+    padding: 0 12px;
+  }
+  #tournaments .tournament-countdown h4 {
+    font-size: 16px;
+  }
+  #tournaments .tournament-countdown #countdown-active .countdown-box {
+    margin-left: 10px;
+    height: 50px;
+    width: 50px;
+  }
+  #tournaments .tournament-countdown #countdown-active h2 {
+    font-size: 16px;
+    padding-top: 5px;
+  }
+  #tournaments .tournament-countdown #countdown-active span {
+    font-size: 14px;
+  }
+  #tournaments .players-list {
+    height: 200px;
+  }
+
+  /* ===== tournaments css ends ===== */
+  /* ===== payment css starts ===== */
+  #payment {
+    padding-bottom: 30px;
+  }
+  #payment .offers-area form {
+    width: 400px;
+  }
+
+  /* ===== payment css ends ===== */
+  /* ===== footer css starts ===== */
+  #footer .link-area .links table {
+    width: 75%;
+  }
+  #footer .security-area .logo p {
+    font-size: 16px;
+    padding-right: 50px;
+    margin-left: 28px;
+  }
+
+  /* ===== footer css ends ===== */
+}
+/* =================================== */

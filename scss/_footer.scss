@@ -1,0 +1,103 @@
+@import 'variables';
+@import 'mixin';
+
+/*=============================
+  ===== footer css starts =====
+===============================*/
+#footer{
+  background: $bg2;
+  border-bottom: 1px solid #590ec9;
+  h1{
+    @include antonreg;
+    font-size: 32px;
+    color: #fff;
+    text-shadow: 3px 3px 1px rgba(0, 0, 0, .4);
+    margin-top: 60px;
+    padding-bottom: 15px;
+  }
+  .jackpot-area{
+    p{
+      @include nunitoreg;
+      font-size: 15px;
+      color: #fff;
+      line-height: 26px;
+      margin-bottom: 35px;
+    }
+    i{
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      margin-right: 10px;
+      background: linear-gradient(#9c4cfa, #590ec9);
+      border-bottom: 3px solid #3a0090;
+      text-align: center;
+      color: #fff;
+      text-shadow: 3px 4px 1px rgba(0, 0, 0, .4);
+      font-size: 20px;
+      position: relative;
+      z-index: 1;
+      @include transition;
+      &::after{
+        content: '';
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(#fc37d9, #aa0288);
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        @include transition;
+        z-index: -1;
+      }
+
+      &:hover{
+        border-bottom: 3px solid #661355;
+      }
+      &:hover::after{
+        opacity: 1;
+      }
+    }
+  }
+  .link-area{
+    .links{
+      table{
+        width: 88%;
+        a{
+          @include nunitobold;
+          font-size: 16px;
+          color: #fff;
+          line-height: 40px;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+  .security-area{
+    h1{
+      margin-bottom: 5px !important;
+    }
+    .logo{
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      margin-bottom: 25px;
+      img{
+        cursor: pointer;
+      }
+      p{
+        @include nunitobold;
+        font-size: 16px;
+        color: #fff;
+        padding-right: 120px;
+        margin-left: 28px;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+
+
+/*===========================
+  ===== footer css ends =====
+=============================*/

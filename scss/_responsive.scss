@@ -1,0 +1,582 @@
+@import 'variables';
+@import 'mixin';
+/*=================================
+  ===== responsive css starts =====
+===================================*/
+
+/* ===== For Extra Small Device =====  */
+@media (min-width: 320px) and (max-width: 575px) {
+  /* ===== navbar css starts ===== */
+  #navbar{
+    .navbar {
+      background: $bg1;
+      padding: 0px 10px !important;
+
+      #navbarNav{
+        margin-top: -15px !important;
+        button{
+          width: 47%;
+        } 
+      }
+    }
+    .navbar{
+      ul{
+        li{
+          background: #3234394d !important;
+        }
+      }
+    }
+    .navbar{
+      .navbar-brand{
+        position: static;
+      }
+    }
+    .navbar{
+      .navbar-toggler{
+        margin-left: 200px !important;
+        padding: 10px 15px !important;
+        margin-top: 75px;
+        border-radius: 5px;
+        border-bottom: none;
+
+        &::after{
+          border-radius: 5px;
+        }
+
+        &:hover{
+          border-bottom: none;
+        }
+
+        &:focus{
+          box-shadow: none;
+        }
+      }
+      i{
+        text-shadow: none;
+        color: #fff !important;
+        font-size: 20px;
+      }
+    }
+
+    .navbar-nav{
+      .nav-item{
+        text-align: center;
+        padding: 5px 0 !important;
+        .nav-link{
+          margin-right: 0 !important;
+        }
+      }
+    }
+  }
+  /* ===== navbar css ends ===== */
+  /* ///////////////////////////// */
+  /* ===== banner css starts ===== */
+  #banner{
+    position: static;
+  }
+  /* ===== banner css ends ===== */
+  /* //////////////////////////// */
+  /* ===== about css starts ===== */
+  
+  /* ===== about css ends ===== */
+  /* ///////////////////////////////// */
+  /* ===== gallery css starts ===== */
+  
+  /* ===== gallery css ends ===== */
+  /* ////////////////////////////// */
+  /* ===== team css starts ===== */
+  
+  /* ===== team css ends ===== */
+  /* ///////////////////////////// */
+  /* ===== testimonial css ends ===== */
+  
+  /* ===== testimonial css ends ===== */
+  /* /////////////////////////////////// */
+  /* ===== membership css starts ===== */
+  
+  /* ===== membership css ends ===== */
+  /* //////////////////////////////// */
+  /* ===== counter css starts ===== */
+  
+  /* ===== counter css ends ===== */
+  /* ////////////////////////////// */
+  /* ===== routine css starts ===== */
+  
+  /* ===== routine css ends ===== */
+  /* ////////////////////////////// */
+  /* ===== brand css starts ===== */
+  
+  /* ===== brand css ends ===== */
+  /* //////////////////////////// */
+  /* ===== footer css starts ===== */
+  
+  /* ===== footer css ends ===== */
+}
+/* ================================================================================= */
+
+/* ================================================================================= */
+/* ===== For Small Device =====  */
+@media (min-width: 576px) and (max-width: 767px) {
+  /* ===== navbar css starts ===== */
+  #navbar{
+    .navbar {
+      background: $bg1;
+      padding: 0px 10px !important;
+
+      #navbarNav{
+        margin-top: -15px !important;
+        button{
+          width: 47%;
+        } 
+      }
+    }
+    .navbar{
+      ul{
+        li{
+          background: #3234394d !important;
+        }
+      }
+    }
+    .navbar{
+      .navbar-brand{
+        position: static !important;
+        margin-left: 0px !important;
+      }
+    }
+    .navbar{
+      .navbar-toggler{
+        padding: 10px 15px !important;
+        margin-top: 75px;
+        border-radius: 5px;
+        border-bottom: none;
+        z-index: 1;
+
+        &::after{
+          border-radius: 5px;
+          z-index: -1;
+        }
+
+        &:hover{
+          border-bottom: none;
+        }
+
+        &:focus{
+          box-shadow: none;
+        }
+      }
+      i{
+        text-shadow: none;
+        color: #fff !important;
+        font-size: 20px;
+      }
+    }
+
+    .navbar-nav{
+      .nav-item{
+        text-align: center;
+        padding: 5px 0 !important;
+        .nav-link{
+          margin-right: 0 !important;
+        }
+      }
+    }
+  }
+  /* ===== navbar css ends ===== */
+  /* ///////////////////////////// */
+  /* ===== banner css starts ===== */
+  #banner{
+    // position: static;
+    .banner-image{
+      position: static;
+      img{
+        position: static;
+        margin-top: 80px;
+      }
+    }
+    .banner-text{
+      margin-left: 50px;
+      h5{
+        padding-top: 0px !important;
+      }
+      h1{
+        font-size: 135px;
+        margin-top: -10px !important;
+        margin-bottom: -15px !important;
+      }
+      p{
+        text-align: justify !important;
+      }
+      button{
+        margin-left: 0 !important;
+        margin-top: 10px !important;
+        transform: translateX(0%);
+        margin-bottom: 100px !important;
+      }
+    }
+    .register-area{
+      bottom: -72px;
+    }
+    .card-item{
+      h1{
+        font-size: 25px;
+        padding-top: 10px;
+      }
+      h2{
+        font-size: 16px;
+        padding-top: 10px;
+      }
+      P{
+        font-size: 14px;
+        padding: 5px 20px;
+      }
+    }
+  }
+  /* ===== banner css ends ===== */
+  /* //////////////////////////// */
+  /* ===== related-games css starts ===== */
+  #games{
+    .heading{
+      h1{
+        padding-top: 100px !important;
+      }
+    }
+    .item-image{
+      .overlay{
+        h3{
+          font-size: 16px;
+          padding-top: 50px;
+          padding-bottom: 10px;
+        }
+        button{
+          transform: scale(.5);
+        }
+      }
+    }
+  }
+  /* ===== related-games css ends ===== */
+  /* ///////////////////////////////// */
+  /* ===== spin css starts ===== */
+  #spin{
+    padding-top: 0px;
+    .item-image{
+      img{
+        margin-top: 80px;
+        left: 0px;
+      }
+    }
+    .item-text{
+      h1{
+        padding-top: 20px;
+        padding-bottom: 650px;
+        text-align: center;
+      }
+      p{
+        text-align: justify;
+      }
+      button{
+        margin-top: 20px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+  
+  /* ===== spin css ends ===== */
+  /* ////////////////////////////// */
+  /* ===== pricing css starts ===== */
+  #pricing{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    .heading{
+      h1{
+        padding-bottom: 0px;
+      }
+    }
+    .pricing-detail{
+      button{
+        opacity: 1 !important;
+      }
+    }
+    .pricing-item{
+      margin-top: -40px;
+      transform: scale(.7);
+      &:hover{
+        transform: scale(.75);
+      }
+      .pricing-heading{
+        opacity: 1 !important;
+      }
+    }
+  }
+  /* ===== pricing css ends ===== */
+  /* ===== payment css ends ===== */
+  #payment{
+    padding-bottom: 30px;
+  }
+  /* ===== payment css ends ===== */  
+}
+/* ================================================================================= */
+
+/* ================================================================================= */
+/* ===== For Medium Device =====  */
+@media (min-width: 768px) and (max-width: 991px) {
+    /* ===== navbar css starts ===== */
+    #navbar{
+      .navbar {
+        background: $bg1;
+        padding: 0px 10px !important;
+  
+        #navbarNav{
+          margin-top: -15px !important;
+          button{
+            width: 47%;
+          } 
+        }
+      }
+      .navbar{
+        ul{
+          li{
+            background: #3234394d !important;
+          }
+        }
+      }
+      .navbar{
+        .navbar-brand{
+          position: static !important;
+          margin-left: 0px !important;
+        }
+      }
+      .navbar{
+        .navbar-toggler{
+          padding: 10px 15px !important;
+          margin-top: 75px;
+          border-radius: 5px;
+          border-bottom: none;
+          z-index: 1;
+  
+          &::after{
+            border-radius: 5px;
+            z-index: -1;
+          }
+  
+          &:hover{
+            border-bottom: none;
+          }
+  
+          &:focus{
+            box-shadow: none;
+          }
+        }
+        i{
+          text-shadow: none;
+          color: #fff !important;
+          font-size: 20px;
+        }
+      }
+  
+      .navbar-nav{
+        .nav-item{
+          text-align: center;
+          padding: 5px 0 !important;
+          .nav-link{
+            margin-right: 0 !important;
+          }
+        }
+      }
+    }
+    /* ===== navbar css ends ===== */
+    /* ///////////////////////////// */
+    /* ===== banner css starts ===== */
+    #banner{
+      // position: static;
+      .banner-image{
+        position: static;
+        img{
+          position: static;
+          margin-top: 20px;
+        }
+      }
+      .banner-text{
+        margin-left: 50px;
+        h5{
+          padding-top: 0px !important;
+        }
+        h1{
+          font-size: 135px;
+          margin-top: -10px !important;
+          margin-bottom: -15px !important;
+        }
+        p{
+          text-align: justify !important;
+        }
+        button{
+          margin-left: 0 !important;
+          margin-top: 10px !important;
+          transform: translateX(0%);
+          margin-bottom: 100px !important;
+        }
+      }
+      .register-area{
+        bottom: -72px;
+      }
+      .card-item{
+        h1{
+          font-size: 25px;
+          padding-top: 10px;
+        }
+        h2{
+          font-size: 16px;
+          padding-top: 10px;
+        }
+        P{
+          font-size: 14px;
+          padding: 5px 20px;
+        }
+      }
+    }
+    /* ===== banner css ends ===== */
+    /* //////////////////////////// */
+    /* ===== related-games css starts ===== */
+    #games{
+      .heading{
+        h1{
+          padding-top: 100px !important;
+        }
+      }
+      .item-image{
+        .overlay{
+          h3{
+            font-size: 20px;
+            padding-top: 80px;
+            padding-bottom: 10px;
+          }
+          button{
+            transform: scale(.8);
+          }
+        }
+      }
+    }
+    /* ===== related-games css ends ===== */
+    /* ///////////////////////////////// */
+    /* ===== spin css starts ===== */
+    #spin{
+      padding-top: 0px;
+      .item-image{
+        img{
+          margin-top: 80px;
+          left: 0px;
+        }
+      }
+      .item-text{
+        h1{
+          padding-top: 20px;
+          padding-bottom: 30px;
+        }
+        p{
+          text-align: justify;
+        }
+        button{
+          margin-top: 20px;
+          margin-bottom: 30px;
+        }
+      }
+    }
+    
+    /* ===== spin css ends ===== */
+    /* ////////////////////////////// */
+    /* ===== pricing css starts ===== */
+    #pricing{
+      padding-top: 30px;
+      padding-bottom: 80px;
+      .heading{
+        h1{
+          padding-bottom: 0px;
+        }
+      }
+      .pricing-item{
+        margin-top: 60px;
+        &:hover{
+        }
+      }
+      .pricing-detail{
+        ul{
+          li{
+            margin-bottom: -10px !important;
+          }
+        }
+      }
+    }
+    /* ===== pricing css ends ===== */
+    /* ===== tournaments css starts ===== */
+    #tournaments{
+      padding-top: 20px;
+      padding-bottom: 30px;
+
+      .faq-heading{
+        h1{
+
+        }
+      }
+      .faq{
+        .question{
+          h3{
+            font-size: 16px;
+            padding: 0 12px;
+          }
+        }
+      }
+      .tournament-countdown{
+        h4{
+          font-size: 16px;
+        }
+        #countdown-active{
+          .countdown-box{
+            margin-left: 10px;
+            height: 50px;
+            width: 50px;
+          }
+          h2{
+            font-size: 16px;
+            padding-top: 5px;
+          }
+          span{
+            font-size: 14px;
+          }
+        }
+      }
+      .players-list{
+        height: 200px;
+      }
+    }
+    /* ===== tournaments css ends ===== */
+    /* ===== payment css starts ===== */
+    #payment{
+      padding-bottom: 30px;
+      .offers-area{
+        form{
+          width: 400px;
+        }
+      }
+    }
+    /* ===== payment css ends ===== */
+    /* ===== footer css starts ===== */
+    #footer{
+      .link-area{
+        .links{
+          table{
+            width: 75%;
+          }
+        }
+      }
+      .security-area{
+        .logo{
+          p{
+            font-size: 16px;
+            padding-right: 50px;
+            margin-left: 28px;
+          }
+        }
+      }
+    }
+    /* ===== footer css ends ===== */
+}
+/* =================================== */

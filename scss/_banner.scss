@@ -1,0 +1,138 @@
+@import 'variables';
+@import 'mixin';
+
+/*=============================
+  ===== banner css starts =====
+===============================*/
+#banner{
+  background: $bg1;
+  padding-top: 25px;
+  position: relative;
+
+  .banner-image{
+    position: relative;
+
+    img{
+    transform: scale(1.15);
+    position: absolute;
+    top: 45px;
+    left: -60px;
+    }
+  }
+
+  .register-area{
+    position: absolute;
+    bottom: -96px;
+    left: 0;
+  }
+
+  .banner-text{
+    h5{
+      @include nunitoreg;
+      color: #fff;
+      font-size: 20px;
+      padding-top: 80px !important;
+    }
+
+    h1{
+      @include antonreg;
+      // background: linear-gradient(#fcb100, #974e05, #fcb100);
+      // background-clip: text;
+      font-size: 330px;
+      color:#fcb100;
+      text-shadow: 0px 0px 50px #5a0274;
+      margin-top: -45px !important;
+      margin-bottom: -35px !important;
+      margin-left: -10px !important;
+    }
+
+    p{
+      @include nunitoreg;
+      color: #fff;
+      font-size: 15px;
+    }
+
+    button{
+      margin-left: 50%;
+      transform: translateX(-50%);
+      margin-top: 30px;
+      margin-bottom: 240px;
+      border: none;
+      border-bottom: 5px solid #3a0090;
+      border-radius: 10px;
+      padding: 14px 30px;
+      text-shadow: 5px 5px 1px rgba(0, 0, 0, .2);
+      background: linear-gradient(#9c4cfa, #590ec9);
+      color: #fff;
+      @include antonreg;
+      font-size: 20px;
+      position: relative;
+      @include transition;
+      z-index: 1;
+
+      &::after{
+        content: '';
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(#fc37d9, #aa0288);
+        border-radius: 8px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        @include transition;
+        z-index: -1;
+      }
+
+      &:hover{
+        border-bottom: 5px solid #661355;
+      }
+      &:hover::after{
+        opacity: 1;
+      }
+    }
+  }
+
+  .card-item{
+    background: #661bd3;
+    box-shadow: 20px 0px 30px 0px rgba(0,0,0,0.26) inset;
+    -webkit-box-shadow: 20px 0px 30px 0px rgba(0,0,0,0.26) inset;
+    -moz-box-shadow: 20px 0px 30px 0px rgba(0,0,0,0.26) inset;
+
+    h1{
+      @include antonreg;
+      font-size: 50px;
+      color: #fcb100;
+      padding-top: 25px;
+      text-shadow: 0px 0px 50px #5a0274;
+    }
+
+    h2{
+      @include antonreg;
+      font-size: 32px;
+      color: #fff;
+      padding-top: 15px;
+      text-shadow: 5px 5px 1px rgba(0, 0, 0, .2);
+    }
+
+    p{
+      @include openreg;
+      font-size: 14px;
+      color: #fff;
+      padding-top: 10px;
+      padding-bottom: 25px;
+    }
+  }
+
+  .item-1{
+    border-radius: 5px 0 0 5px;
+    box-shadow: none !important;
+  }
+
+  .item-3{
+    border-radius: 0 5px 5px 0;
+  }
+}
+/*===========================
+  ===== banner css ends =====
+=============================*/

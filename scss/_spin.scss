@@ -1,0 +1,77 @@
+@import 'variables';
+@import 'mixin';
+
+
+/*===========================
+  ===== spin css starts =====
+=============================*/
+#spin{
+  background: $bg1;
+  padding-top: 100px;
+  .item-image{
+    position: relative;
+    background: red !important;
+    img{
+      position: absolute;
+      top: 0;
+      left: -45px;
+    }
+  }
+  .item-text{
+    h1{
+      @include header;
+      padding-top: 80px;
+      padding-bottom: 55px;
+    }
+    p{
+      @include nunitoreg;
+      font-size: 16px;
+      line-height: 26px;
+      color: #fff;
+    }
+    button{
+      margin-top: 35px;
+      margin-bottom: 180px;
+      border: none;
+      border-bottom: 5px solid #3a0090;
+      border-radius: 10px;
+      padding: 14px 30px;
+      text-shadow: 5px 5px 1px rgba(0, 0, 0, .2);
+      background: linear-gradient(#9c4cfa, #590ec9);
+      color: #fff;
+      @include antonreg;
+      font-size: 20px;
+      position: relative;
+      @include transition;
+      z-index: 1;
+
+      &::after{
+        content: '';
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(#fc37d9, #aa0288);
+        border-radius: 8px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        @include transition;
+        z-index: -1;
+      }
+
+      &:hover{
+        border-bottom: 5px solid #661355;
+      }
+      &:hover::after{
+        opacity: 1;
+      }
+    }
+  }
+}
+
+
+
+
+/*=========================
+  ===== spin css ends =====
+===========================*/
